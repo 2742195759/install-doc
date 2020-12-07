@@ -1,0 +1,9 @@
+安装方法：
+
+pip install jupyterlab -i https://mirrors.aliyun.com/pypi/simple
+
+启动方法：
+
+mkdir -p /home/xiongkun/.jupyter && jupyter lab  --notebook-dir=/home/xiongkun/.jupyter --ip=0.0.0.0 --allow-root --NotebookApp.password=sha1:57cd1831a97a:4b1dcaabfd1073643c4aaf90598dcb25c4891827 
+
+使用上述的启动代码，密码是 3511，注意路径之类的自己设置好。这个是快手的KML的自动配置方法
