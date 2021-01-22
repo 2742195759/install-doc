@@ -1,0 +1,16 @@
+这个文档作为dockerhub的入门文章：
+一. 注册dockerhub
+  官网在 https://hub.docker.com ，登陆这个网站就可以注册自己的账号。我的是 2742195759 这个
+
+二. 如何将现存的 image 推送的 dockerhub下：
+  1. 创建一个dockerhub的仓库，写上名字和描述
+  2. 在自己的本地docker里面输入
+  docker tag local_repo:local_tag  new_repo:new_tag # 这个是将自己重新命名本地，注意 new的仓库名要和新建的仓库一致。例如 2742195759/xkcv:v1.0 
+  docker login # 登陆自己在docker hub 上的账号，这一步不做，那么push 会失败
+  docker push new_repo:new_tag # 
+  
+  然后别的地方就可以直接
+  
+  docker pull 274215759/xkcv 了
+ 
+三. 如何利用 dockerhub 直接下载最简化版本的 ubuntu18.04 ？
