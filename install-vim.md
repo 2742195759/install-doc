@@ -1,6 +1,9 @@
-git clone 
+```
+git clone https://github.com/vim/vim.git
+cd vim 
+git pull
 cd src
-sudo make distclean  # 如果您以前构建Vim
+make distclean  # 如果您以前构建Vim
 ./configure --with-features=huge \
 --enable-multibyte \
 --enable-pythoninterp=dynamic \
@@ -16,5 +19,6 @@ sudo make distclean  # 如果您以前构建Vim
 --with-compiledby="xxx@email.com" \
 --enable-fail-if-missing \
 --prefix=/usr/local 
-$ sudo make
-$ sudo make install
+make -j 20
+make install
+```
